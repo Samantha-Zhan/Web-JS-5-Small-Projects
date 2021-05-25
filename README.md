@@ -5,10 +5,14 @@ This is a fun website composing 5 interesting games/small features developed usi
 
 ### Challenge 3: The Rock, Paper, Scissors Game
 The game allows a human player to play with a bot player. Human chooses his/her move, and the bot follows by choosing randomly. The panel changes to display the choice selected by both players and the result. There is also a restart button for the player to play again.
-
+Player make selection             |  Display result of game
+:-------------------------:|:-------------------------:
+<img src="https://github.com/Samantha-Zhan/Web-JS-5-Small-Projects/blob/main/challenges/Capture.JPG" width="1200" height="230"> |  <img src="https://github.com/Samantha-Zhan/Web-JS-5-Small-Projects/blob/main/challenges/Capture1.JPG" width="1200" height="230">
+<br>
 
 ### Challenge 5: Blackjack
 This small game simulates the popular poker gamed—blackjack. Players keep "hitting" a card (drawing one card from the deck) until "stand" if he/she is closest possible to 21. Suppose it goes over 21, the player BUST. After both players have decided, they compare who is closest to 21 (or tie if same or both BUST).
+<br><br>
 The game is also a human vs. robot game, where the bot plays and display its cards one-by-one (async function, sleep) after the player clicks "stand". The game then shows the result and plays a winning/losing sound effect. Moreover, the game allows score tallying by displaying scores over multiple turns in the table underneath.
 
 
