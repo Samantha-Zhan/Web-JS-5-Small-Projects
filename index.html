@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript on Steroids</title>
+</head>
+<body>
+    <div class="container-1">
+        <div class="title">
+            <h2>Challenge 1: Your Age in Days</h2>
+        </div>
+        
+        <div class="bottom">
+            <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            <button class="btn btn-danger" onclick="reset()">reset</button>
+        </div>
+
+        <div class="bottom" id="age-result">
+            <h4 id="text-input"> You are __ days old</h4>
+        </div>
+    </div>
+    
+    <div class="container-1">
+        <div class="title">
+            <h2>Challenge 2: Cat Generator</h2>
+        </div>
+        <div class="bottom">
+            <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        </div>
+        <div class="bottom-imgs" id="imgs-frame"> </div>
+    </div>
+    
+
+    <div class="container-1">
+        <div class="title">
+            <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        </div>
+        <div class="bottom-rps" id="rps">
+            <img class="simg" src="https://www3.bostonglobe.com//rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/rock--left.png" id="rock" alt="rock" onclick="rpsGame(this)"> <!-- This means current image element-->
+            <img class="simg" src="paper.png" alt="paper" id="paper" onclick="rpsGame(this)">
+            <img class="simg" src="https://jowaynejosephs.github.io/Rock-Paper-Scissors/img/scissors.png" alt="scissor" id="scissor" onclick="rpsGame(this)">
+        </div>
+        <div class="bottom-restart" onclick="restartRps()">
+            <button class="btn btn-danger">restart game</button>
+        </div>
+    </div>
+    <div class="container-1">
+        <div class="title">
+            <h2>Challenge 4: Change the Color of All Buttons</h2>
+        </div>
+        <div class="bottom-colorChange">
+        <form action="">
+            <select name="buttonColor" id="setButtonColor" onchange="buttonColorChange(this)">
+                <option value="reset">Reset</option>
+                <option value="random">Random</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+            </select>
+        </form>
+        <button class="btn btn-primary">Wee!</button>
+        <button class="btn btn-danger">Yahoo!</button>
+        <button class="btn btn-warning">Google!</button>
+        <button class="btn btn-success">Facebook!</button>
+    </div>
+    </div>
+    <div class="container-1">
+        <div class="title">
+            <h2>Challenge 5: Blackjack</h2>
+            <h3><span id="blackjack-result">Let's play</span></h3>
+        </div>
+        
+        <div class="bottom-game-panel">
+            <!--<img src="playingTable.jpg" alt="game board">-->
+            <div class="leftCol" id="your-box">
+                <h2>You: <span id="your-result">0</span></h2>
+            </div>
+    
+            <div class="rightCol" id="dealer-box">
+                <h2>Dealer: <span id="dealer-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="bottom-card">
+            <button class="btn-lg btn-primary" id="hit">Hit</button>
+            <button class="btn-lg btn-warning" id="stand">Stand</button>
+            <button class="btn-lg btn-danger" id="deal">Deal</button>
+        </div>
+
+        <div class="bottomTable">
+            <table>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                    <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draws">0</span></td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script src="static/js/script.js"></script>
+</body>
+</html>

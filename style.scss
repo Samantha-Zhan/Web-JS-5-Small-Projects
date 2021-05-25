@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+}
+.container-1{
+    margin: 0 auto;
+    width: 80%;
+    border-style: solid;
+    .title{
+        padding: 1em;
+        font-weight: bolder;
+    }
+    .bottom, .bottom-imgs, .bottom-rps, .bottom-restart, .bottom-colorChange, .bottom-card, .bottom-game-panel, .bottomTable{
+        display: flex;
+        place-content: space-around;
+        padding: 1em 5em;
+        border-style: solid;
+        border-bottom: white;
+        border-left: white;
+        border-right: white;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .bottom-imgs, .bottom-rps, .rightCol, .leftCol{
+        img, .simg{
+            margin: 1em;
+            width: 20%;
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+            
+        }
+    }
+    .bottom-rps{
+        img, .simg{
+            transform: rotate(270deg);
+            box-shadow: none;
+        }
+        .simg{
+            &:hover{
+                transform: rotate(22.5deg);
+            }
+        }
+        
+    }
+}
+
+.bottom-colorChange{
+    align-items: center;
+}
+
+.bottom-game-panel{
+    background-image: url("playingTable.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    h2{
+        color:white;
+    }
+    div{
+        flex:1; // make flex elements equally important
+        border-style: solid;
+        padding: 10px;
+        padding-top: 20px;
+        height: 23em;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+ table th, table td{
+    padding: 0.5em;
+    border: 3px solid lightgray;
+    color: lightgray;
+}
+
+.bottom-card{
+    border-top: #000940;
+    border-bottom: #000940;
+    background: #000940;
+}
+
+.bottomTable{
+    border-top: #000940;
+    background: #000940;
+}
+
+
+@media only screen and (min-width: 1080px){
+    .container-1{
+        width: 840px;
+    }
+}
+

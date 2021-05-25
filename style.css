@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  text-align: center;
+}
+
+.container-1 {
+  margin: 0 auto;
+  width: 80%;
+  border-style: solid;
+}
+
+.container-1 .title {
+  padding: 1em;
+  font-weight: bolder;
+}
+
+.container-1 .bottom, .container-1 .bottom-imgs, .container-1 .bottom-rps, .container-1 .bottom-restart, .container-1 .bottom-colorChange, .container-1 .bottom-card, .container-1 .bottom-game-panel, .container-1 .bottomTable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-around;
+  padding: 1em 5em;
+  border-style: solid;
+  border-bottom: white;
+  border-left: white;
+  border-right: white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-1 .bottom-imgs img, .container-1 .bottom-imgs .simg, .container-1 .bottom-rps img, .container-1 .bottom-rps .simg, .container-1 .rightCol img, .container-1 .rightCol .simg, .container-1 .leftCol img, .container-1 .leftCol .simg {
+  margin: 1em;
+  width: 20%;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+.container-1 .bottom-rps img, .container-1 .bottom-rps .simg {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.container-1 .bottom-rps .simg:hover {
+  -webkit-transform: rotate(22.5deg);
+          transform: rotate(22.5deg);
+}
+
+.bottom-colorChange {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-game-panel {
+  background-image: url("playingTable.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bottom-game-panel h2 {
+  color: white;
+}
+
+.bottom-game-panel div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-style: solid;
+  padding: 10px;
+  padding-top: 20px;
+  height: 23em;
+}
+
+.bottom-game-panel img {
+  width: 100%;
+}
+
+table th, table td {
+  padding: 0.5em;
+  border: 3px solid lightgray;
+  color: lightgray;
+}
+
+.bottom-card {
+  border-top: #000940;
+  border-bottom: #000940;
+  background: #000940;
+}
+
+.bottomTable {
+  border-top: #000940;
+  background: #000940;
+}
+
+@media only screen and (min-width: 1080px) {
+  .container-1 {
+    width: 840px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
